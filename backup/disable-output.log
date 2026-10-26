@@ -1,0 +1,99 @@
+recorded 32 packages on 192.168.1.7 (0 already disabled, left alone by undo) -> C:\Users\lenov\.cleanyourtv\recovery-192.168.1.7-3959563e.json
+HOME before: com.google.android.apps.tv.launcherx/.home.HomeActivity
+undo with tools/restore.sh <same list>; keep this file, it is the only copy.
+$ pm disable-user --user 0 com.tcl.bi
+Package com.tcl.bi new state: disabled-user
+$ pm disable-user --user 0 com.tcl.logkit
+Package com.tcl.logkit new state: disabled-user
+$ pm disable-user --user 0 com.google.android.feedback
+Package com.google.android.feedback new state: disabled-user
+$ pm disable-user --user 0 com.tcl.dashboard
+Package com.tcl.dashboard new state: disabled-user
+$ pm disable-user --user 0 com.tcl.partnercustomizer
+Package com.tcl.partnercustomizer new state: disabled-user
+$ pm disable-user --user 0 com.tcl.messagebox
+Package com.tcl.messagebox new state: disabled-user
+$ pm disable-user --user 0 com.tcl.overseasappshow
+Package com.tcl.overseasappshow new state: disabled-user
+$ pm disable-user --user 0 com.tcl.esticker
+Package com.tcl.esticker new state: disabled-user
+$ pm disable-user --user 0 com.tcl.tv.tclhome_passive
+Package com.tcl.tv.tclhome_passive new state: disabled-user
+$ pm disable-user --user 0 com.tcl.waterfall.overseas
+Package com.tcl.waterfall.overseas new state: disabled-user
+$ pm disable-user --user 0 android.autoinstalls.config.google.gtvpai
+Package android.autoinstalls.config.google.gtvpai new state: disabled-user
+$ pm disable-user --user 0 com.google.android.partnersetup
+Package com.google.android.partnersetup new state: disabled-user
+$ pm disable-user --user 0 com.google.android.onetimeinitializer
+Package com.google.android.onetimeinitializer new state: disabled-user
+$ pm disable-user --user 0 com.google.android.videos
+Package com.google.android.videos new state: disabled-user
+$ pm disable-user --user 0 com.google.android.youtube.tvmusic
+Package com.google.android.youtube.tvmusic new state: disabled-user
+$ pm disable-user --user 0 com.google.android.play.games
+Package com.google.android.play.games new state: disabled-user
+$ pm disable-user --user 0 com.tcl.guard
+Package com.tcl.guard new state: disabled-user
+$ pm disable-user --user 0 com.tcl.usercenter
+Package com.tcl.usercenter new state: disabled-user
+$ pm disable-user --user 0 com.tcl.ocean.instructions
+Package com.tcl.ocean.instructions new state: disabled-user
+$ pm disable-user --user 0 com.tcl.android.webview
+Package com.tcl.android.webview new state: disabled-user
+$ pm disable-user --user 0 org.chromium.webview_shell
+Package org.chromium.webview_shell new state: disabled-user
+$ pm disable-user --user 0 com.google.android.syncadapters.calendar
+Package com.google.android.syncadapters.calendar new state: disabled-user
+$ pm disable-user --user 0 com.tcl.gallery
+Package com.tcl.gallery new state: disabled-user
+$ pm disable-user --user 0 com.tcl.browser
+Package com.tcl.browser new state: disabled-user
+$ pm disable-user --user 0 com.tcl.gamebar
+Package com.tcl.gamebar new state: disabled-user
+$ pm disable-user --user 0 com.tcl.channelplus
+Package com.tcl.channelplus new state: disabled-user
+$ pm disable-user --user 0 com.tcl.ui_mediaCenter
+Package com.tcl.ui_mediaCenter new state: disabled-user
+$ pm disable-user --user 0 com.google.android.apps.mediashell
+Package com.google.android.apps.mediashell new state: disabled-user
+$ pm disable-user --user 0 com.tcl.miracast
+Package com.tcl.miracast new state: disabled-user
+$ pm disable-user --user 0 com.tcl.MultiScreenInteraction_TV
+Package com.tcl.MultiScreenInteraction_TV new state: disabled-user
+$ pm disable-user --user 0 com.google.android.tungsten.setupwraith
+Package com.google.android.tungsten.setupwraith new state: disabled-user
+$ pm list packages -d
+package:com.google.android.apps.mediashell
+package:com.tcl.esticker
+package:android.autoinstalls.config.google.gtvpai
+package:com.google.android.onetimeinitializer
+package:au.com.stan.and
+package:com.tcl.miracast
+package:com.google.android.tungsten.setupwraith
+package:com.tcl.ocean.instructions
+package:com.tcl.gallery
+package:com.tcl.gamebar
+package:com.tcl.channelplus
+package:com.tcl.browser
+package:com.tcl.guard
+package:com.tcl.logkit
+package:com.tcl.waterfall.overseas
+package:com.tcl.MultiScreenInteraction_TV
+package:com.google.android.youtube.tvmusic
+package:com.google.android.partnersetup
+package:com.google.android.videos
+package:com.tcl.android.webview
+package:com.tcl.partnercustomizer
+package:org.chromium.webview_shell
+package:com.google.android.feedback
+package:com.google.android.syncadapters.calendar
+package:tv.wuaki.apptv
+package:com.tcl.tv.tclhome_passive
+package:com.tcl.usercenter
+package:com.tcl.bi
+package:com.tcl.overseasappshow
+package:com.tcl.ui_mediaCenter
+package:com.tcl.dashboard
+package:com.tcl.messagebox
+package:com.google.android.play.games

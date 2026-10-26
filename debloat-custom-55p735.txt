@@ -1,0 +1,81 @@
+# TCL 55P735 (BeyondTV4, Google TV 11, SDK 30) - Custom debloat for Willy
+# Basis: examples/tcl-50p735/ + examples/tcl-g03-google-tv/
+# Preferences: Voice KEEP, Casting DISABLE, Streaming apps BIARKAN (kecuali yang di dock)
+# Dock (4 tile, in order): YouTube, Netflix, Vidio, Disney+
+#
+# Apply:   TV_HOST=192.168.1.7 tools/disable.sh debloat-custom-55p735.txt
+# Undo:    TV_HOST=192.168.1.7 tools/restore.sh debloat-custom-55p735.txt com.google.android.apps.tv.launcherx
+#
+# Everything is DISABLED, not uninstalled. Comment out any line you want to keep.
+
+# ===== 1. TCL & Google Telemetry =====
+com.tcl.bi                                  # TCL BI analytics
+com.tcl.logkit                              # log capture and upload
+com.google.android.feedback                 # crash / feedback reporting
+
+# ===== 2. TCL & Google content, ads, recommendation rows =====
+com.tcl.dashboard                           # TCL dashboard / promo backend (user choice: DISABLE)
+com.tcl.partnercustomizer                   # partner customisation, promo rows
+com.tcl.messagebox                          # TCL promo box
+com.tcl.overseasappshow                     # recommended apps showcase
+com.tcl.esticker                            # sticker / emoji overlay
+com.tcl.tv.tclhome_passive                  # TCL content at boot
+com.tcl.waterfall.overseas                  # TCL content portal
+android.autoinstalls.config.google.gtvpai   # silently installs partner apps
+com.google.android.partnersetup             # partner-app attribution
+com.google.android.onetimeinitializer       # one-time setup
+com.google.android.videos                   # Google Play Movies (user has YouTube only)
+com.google.android.youtube.tvmusic          # YouTube Music (user has YouTube only)
+com.google.android.play.games               # Play Games
+
+# ===== 3. Background services & preloaded extras =====
+com.tcl.guard                               # TCL online support
+com.tcl.usercenter                          # TCL account nags
+com.tcl.ocean.instructions                  # e-manual
+com.tcl.android.webview                     # TCL WebView
+org.chromium.webview_shell                  # WebView test shell
+com.google.android.syncadapters.calendar    # calendar sync (no calendar on TV)
+com.tcl.gallery                             # TCL photo gallery
+com.tcl.browser                             # TCL web browser
+com.tcl.gamebar                             # game mode / VRR overlay (user doesn't game)
+com.tcl.channelplus                         # TCL Live FAST channels
+com.tcl.ui_mediaCenter                      # USB media player (optional; disabled if not using USB)
+
+# ===== 4. Casting & mirroring (user choice: DISABLE casting, KEEP voice) =====
+com.google.android.apps.mediashell          # Chromecast receiver (DISABLE per user)
+com.tcl.miracast                            # Miracast mirroring (DISABLE per user)
+com.tcl.MultiScreenInteraction_TV           # T-Cast / MagiConnect (DISABLE per user)
+
+# ===== 5. Voice & assistant (user choice: KEEP) =====
+# KEEP: com.google.android.katniss (Google search/voice)
+# KEEP: com.tcl.assistant (TCL voice)
+# KEEP: com.tcl.micmanager (remote microphone)
+# UNCOMMENT below if you want to disable voice:
+# com.google.android.katniss
+# com.tcl.assistant
+# com.tcl.micmanager
+# com.tcl.smartalexa (Alexa bridge)
+
+# ===== 6. Setup wizard, stock launcher & screensaver =====
+com.google.android.tungsten.setupwraith     # Google TV setup wizard (blocks custom launcher takeover)
+com.google.android.apps.tv.launcherx        # stock Google TV home (replaces it with com.gathin.tvhome)
+# com.google.android.apps.tv.dreamx (ambient screensaver + Google Home panel - keep for now)
+
+# ===== DO NOT DISABLE =====
+# Critical for TV operation:
+# - com.tcl.tv (Live TV app, plays HDMI)
+# - com.tcl.tvinput (HDMI 1-3, AV, tuner inputs)
+# - com.tcl.suspension (Quick panel, Input key, HDMI source switch) [USER CHOICE: KEEP]
+# - com.tcl.settings, com.tcl.system.server, com.tcl.providers.config
+# - com.tcl.initsetup, com.tcl.factory.view
+# - com.tcl.tcl_bt_rcu_service, com.tcl.autopair (remote & Bluetooth pairing)
+# - com.tcl.inputmethod.international (on-screen keyboard)
+# - com.google.android.tv.remote.service (remote service)
+# - com.tcl.keyhelp (remote key hints, keep unclear)
+# - com.tcl.hearaid (user choice: KEEP disabled explicitly as "nggak ada")
+# - com.tcl.t_solo (Bluetooth audio, user choice: KEEP disabled explicitly)
+# - com.tcl.versionUpdateApp (firmware updater, USER CHOICE: KEEP for future updates)
+# - com.tcl.xian.StartandroidService (device reporting for firmware updater, user choice: KEEP)
+# - com.tcl.smartalexa (optional, but disabled in list 4 for now if casting off)
+# Streaming apps kept for now: Netflix, YouTube, Vidio, Disney+, Spotify, Apple TV etc (user said BIARKAN dulu)
+# Google core services: Play Store, Play Services, Android core, Settings, etc (NEVER TOUCH)

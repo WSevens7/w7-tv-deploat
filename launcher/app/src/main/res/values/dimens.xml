@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Liquid Glass sizing tokens.
+
+     Three curve tiers, matching the design prompt:
+       .glass-card    24dp  -> glass_radius_card
+       .glass-navbar  9999  -> glass_radius_pill (a full pill: half the view height)
+       .glass-modal   32dp  -> glass_radius_modal
+-->
+<resources>
+    <!-- Continuous squircle curves. -->
+    <dimen name="glass_radius_card">24dp</dimen>
+    <dimen name="glass_radius_modal">32dp</dimen>
+    <!-- Half of a 42dp pill: a true 9999px radius is not expressible in XML, so use the height/2. -->
+    <dimen name="glass_radius_pill">21dp</dimen>
+
+    <!-- The overscan-safe inset. The prompt's layout keeps 56dp of breathing room at the sides;
+         5% of a 1920px-wide 1080p screen is ~96px, so 56dp is already inside the safe area. -->
+    <dimen name="glass_safe_inset">56dp</dimen>
+
+    <!-- Glass surface padding. -->
+    <dimen name="glass_padding_card">16dp</dimen>
+    <dimen name="glass_padding_modal">24dp</dimen>
+
+    <!-- The lift a focused surface gets: the prompt asks for translate3d(0, -6px, 0). -->
+    <dimen name="glass_focus_lift">6dp</dimen>
+
+    <!-- Border hairline. -->
+    <dimen name="glass_border_width">1dp</dimen>
+</resources>

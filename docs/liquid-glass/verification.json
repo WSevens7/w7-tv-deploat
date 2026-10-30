@@ -1,0 +1,30 @@
+{
+  "version": "3.4.1-liquid-glass",
+  "versionCode": 16,
+  "package": "com.gathin.tvhome",
+  "apkBytes": 755464,
+  "apkSha256": "6cdcbf7f8714895eef1ebf27f1a454f3a77f5c6fa5b5f6be97d7a6a2c191d38b",
+  "unitTests": 263,
+  "testFailures": 0,
+  "lintErrors": 0,
+  "lintWarnings": 135,
+  "device": "TCL Smart TV Pro / Android 11 / 1920x1080",
+  "physicalSettingsKey": "Confirmed by user from Home",
+  "rendering": "Native cached wallpaper blur and simulated rim refraction",
+  "systemControls": "Wi-Fi credentials, brightness, picture and sound use native system settings",
+  "newSensitivePermissionsGranted": false,
+  "globalAccessibilityServiceEnabled": false,
+  "restartTest": "Not performed",
+  "performanceBenchmark": "Not performed",
+  "iconSource": "Android SDK Google Material Icons Round; original vector paths, white tint, 22dp size",
+  "localizedStringPairs": 54,
+  "languages": [
+    "en",
+    "id"
+  ],
+  "localizationValidation": "Resource completeness and format placeholder parity passed; Indonesian Control Center verified on TV",
+  "rollbackVersionCode": 17,
+  "clockHeader": "Original Outfit Light/Medium/Regular fonts and original sizes/tracking; time | red line | greeting and EEEE, d MMMM yyyy; both texts #E6FFFFFF; no glass",
+  "appearance": "Sidebar pages via Appearance; one shared Liquid Glass opacity slider controls hero, dock, shortcuts and popups; thumbnail gallery and automatic rotation; duplicate Input removed",
+  "rotationRuntimeTest": "1-minute interval changed actual Home background; final interval restored to 5 minutes"
+}

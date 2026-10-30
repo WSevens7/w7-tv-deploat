@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lg_wallpaper">Wallpaper</string>
+    <string name="lg_glass_opacity">Liquid Glass opacity</string>
+    <string name="lg_opacity_preview">Liquid Glass preview · %1$d%%</string>
+    <string name="lg_opacity_help">Use left/right to adjust 0–100%. Applies to the hero bar, dock, shortcut capsule and popups.</string>
+    <string name="lg_wallpaper_interval">Automatic wallpaper interval</string>
+    <string name="lg_rotation_off">Do not change automatically</string>
+    <string name="lg_every_minutes">Every %1$d minutes</string>
+    <string name="lg_every_hours">Every %1$d hours</string>
+    <string name="lg_rotation_state">Change wallpaper: %1$s</string>
+    <string name="lg_hero_glass">Liquid Glass</string>
+    <string name="lg_dock_icons">Dock &amp; icons</string>
+    <string name="lg_motion">Animations</string>
+    <string name="lg_system">System</string>
+    <string name="lg_auto_wallpaper">Change wallpaper automatically</string>
+</resources>

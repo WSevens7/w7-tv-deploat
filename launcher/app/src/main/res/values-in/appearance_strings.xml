@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lg_wallpaper">Wallpaper</string>
+    <string name="lg_glass_opacity">Opasitas Liquid Glass</string>
+    <string name="lg_opacity_preview">Pratinjau Liquid Glass · %1$d%%</string>
+    <string name="lg_opacity_help">Gunakan kiri/kanan untuk mengatur 0–100%. Berlaku untuk bar hero, dock, kapsul ikon, dan popup.</string>
+    <string name="lg_wallpaper_interval">Interval pergantian wallpaper</string>
+    <string name="lg_rotation_off">Jangan ganti otomatis</string>
+    <string name="lg_every_minutes">Setiap %1$d menit</string>
+    <string name="lg_every_hours">Setiap %1$d jam</string>
+    <string name="lg_rotation_state">Ganti wallpaper: %1$s</string>
+    <string name="lg_hero_glass">Liquid Glass</string>
+    <string name="lg_dock_icons">Dock &amp; ikon</string>
+    <string name="lg_motion">Animasi</string>
+    <string name="lg_system">Sistem</string>
+    <string name="lg_auto_wallpaper">Ganti wallpaper otomatis</string>
+</resources>

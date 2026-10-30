@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lg_control_center">Control Center</string>
+    <string name="lg_network">Network</string>
+    <string name="lg_tv_settings">TV settings</string>
+    <string name="lg_android_settings">Android settings</string>
+    <string name="lg_picture">Picture</string>
+    <string name="lg_display_brightness">Display &amp; brightness</string>
+    <string name="lg_sound">Sound</string>
+    <string name="lg_audio_settings">Audio settings</string>
+    <string name="lg_appearance">Appearance</string>
+    <string name="lg_launcher_settings">Launcher settings</string>
+    <string name="lg_clock">Clock</string>
+    <string name="lg_format24">24-hour</string>
+    <string name="lg_format12">12-hour</string>
+    <string name="lg_tv_inputs">TV inputs</string>
+    <string name="lg_screensaver">Screensaver</string>
+    <string name="lg_apps">Apps</string>
+    <string name="lg_close">Close</string>
+    <string name="lg_brightness">Brightness</string>
+    <string name="lg_picture_settings">Open TV picture settings</string>
+    <string name="lg_memory">Memory  %1$.2f / %2$.2f GB</string>
+    <string name="lg_screensaver_hint">Open the wallpaper clock</string>
+    <string name="lg_ethernet_connected">Ethernet connected</string>
+    <string name="lg_wifi_off">Wi-Fi off</string>
+    <string name="lg_wifi_connected">Wi-Fi connected</string>
+    <string name="lg_not_connected">Not connected</string>
+    <string name="lg_wifi_network">Wi-Fi &amp; Network</string>
+    <string name="lg_current_connection">Current connection</string>
+    <string name="lg_manage_networks">Manage networks</string>
+    <string name="lg_manage_networks_hint">Connect, password &amp; Wi-Fi switch</string>
+    <string name="lg_available_networks">AVAILABLE NETWORKS</string>
+    <string name="lg_wifi_dialog_hint">Open Manage networks to scan and connect using your TV\'s secure Wi-Fi dialog.</string>
+    <string name="lg_secured">Secured</string>
+    <string name="lg_open_network">Open</string>
+    <string name="lg_select_network">Select in TV network settings</string>
+    <string name="lg_password_note">Connection and passwords are handled by TV settings.</string>
+    <string name="lg_back">Back  ‹</string>
+    <string name="lg_android_version">Android %1$s</string>
+    <string name="lg_network_description">Wi-Fi &amp; Network · %1$s</string>
+    <string name="lg_weather_humidity">Humidity</string>
+    <string name="lg_weather_wind">Wind</string>
+</resources>

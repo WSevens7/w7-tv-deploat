@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lg_control_center">Pusat Kontrol</string>
+    <string name="lg_network">Jaringan</string>
+    <string name="lg_tv_settings">Setelan TV</string>
+    <string name="lg_android_settings">Setelan Android</string>
+    <string name="lg_picture">Gambar</string>
+    <string name="lg_display_brightness">Tampilan &amp; kecerahan</string>
+    <string name="lg_sound">Suara</string>
+    <string name="lg_audio_settings">Setelan audio</string>
+    <string name="lg_appearance">Tampilan</string>
+    <string name="lg_launcher_settings">Setelan beranda</string>
+    <string name="lg_clock">Jam</string>
+    <string name="lg_format24">24 jam</string>
+    <string name="lg_format12">12 jam</string>
+    <string name="lg_tv_inputs">Sumber TV</string>
+    <string name="lg_screensaver">Penghemat layar</string>
+    <string name="lg_apps">Aplikasi</string>
+    <string name="lg_close">Tutup</string>
+    <string name="lg_brightness">Kecerahan</string>
+    <string name="lg_picture_settings">Buka setelan gambar TV</string>
+    <string name="lg_memory">Memori  %1$.2f / %2$.2f GB</string>
+    <string name="lg_screensaver_hint">Buka jam dengan latar belakang</string>
+    <string name="lg_ethernet_connected">Ethernet terhubung</string>
+    <string name="lg_wifi_off">Wi-Fi mati</string>
+    <string name="lg_wifi_connected">Wi-Fi terhubung</string>
+    <string name="lg_not_connected">Belum terhubung</string>
+    <string name="lg_wifi_network">Wi-Fi &amp; jaringan</string>
+    <string name="lg_current_connection">Koneksi saat ini</string>
+    <string name="lg_manage_networks">Kelola jaringan</string>
+    <string name="lg_manage_networks_hint">Sambungan, sandi &amp; sakelar Wi-Fi</string>
+    <string name="lg_available_networks">JARINGAN TERSEDIA</string>
+    <string name="lg_wifi_dialog_hint">Buka Kelola jaringan untuk memindai dan menyambungkan melalui dialog Wi-Fi TV.</string>
+    <string name="lg_secured">Diamankan</string>
+    <string name="lg_open_network">Terbuka</string>
+    <string name="lg_select_network">Pilih di setelan jaringan TV</string>
+    <string name="lg_password_note">Koneksi dan sandi dikelola melalui setelan TV.</string>
+    <string name="lg_back">Kembali  ‹</string>
+    <string name="lg_android_version">Android %1$s</string>
+    <string name="lg_network_description">Wi-Fi &amp; jaringan · %1$s</string>
+    <string name="lg_weather_humidity">Kelembapan</string>
+    <string name="lg_weather_wind">Angin</string>
+</resources>

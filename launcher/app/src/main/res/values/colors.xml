@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Liquid Glass design tokens.
+
+     The palette is deliberately deep and moody: the TV shows a wallpaper behind the UI, so the
+     surfaces have to stay dark enough for white text to read at 3 m and the glass has to be
+     translucent rather than opaque, or the wallpaper stops being visible.
+
+     The named values mirror the CSS in the design prompt one for one:
+       background-base      - glass_background_base
+       background-midnight  - glass_background_midnight
+       background-charcoal  - glass_background_charcoal
+       accent-aurora-muted  - glass_accent_aurora_muted
+-->
+<resources>
+    <!-- Deep moody wallpaper palette. -->
+    <color name="glass_background_base">#FF07090E</color>
+    <color name="glass_background_midnight">#FF0D1322</color>
+    <color name="glass_background_charcoal">#FF1A1D24</color>
+    <color name="glass_accent_aurora_muted">#FF2A3F5F</color>
+
+    <!-- Smoked glass surface (the .glass-card gradient, 135deg, top-left to bottom-right). -->
+    <color name="glass_surface_top">#8C121620</color>
+    <color name="glass_surface_bottom">#940A0E16</color>
+
+    <!-- Glass surface while focused: lifted towards the light, so the edge reads as glass. -->
+    <color name="glass_surface_focus_top">#941C202A</color>
+    <color name="glass_surface_focus_bottom">#9E121620</color>
+
+    <!-- The inner specular line at the top of a glass surface (inset highlight). -->
+    <color name="glass_specular_top">#61FFFFFF</color>
+    <color name="glass_specular_bottom">#14FFFFFF</color>
+
+    <!-- Hairline border around a glass surface. -->
+    <color name="glass_border">#0FFFFFFF</color>
+    <color name="glass_border_focus">#29FFFFFF</color>
+
+    <!-- Drop shadow under a floating surface. -->
+    <color name="glass_shadow">#99000000</color>
+
+    <!-- Auto-dimming scrim over the wallpaper: centre stays readable, edges fall away. -->
+    <color name="glass_scrim_center">#7306080E</color>
+    <color name="glass_scrim_edge">#C704060A</color>
+
+    <!-- Text over the scrim. -->
+    <color name="glass_text_primary">#FFFFFFFF</color>
+    <color name="glass_text_secondary">#A6FFFFFF</color>
+    <color name="glass_text_tertiary">#8CFFFFFF</color>
+
+    <!-- Legibility guard: the shadow that keeps text readable over a bright wallpaper. -->
+    <color name="glass_text_shadow">#99000000</color>
+    <color name="glass_text_shadow_strong">#B3000000</color>
+</resources>

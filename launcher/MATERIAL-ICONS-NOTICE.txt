@@ -1,0 +1,12 @@
+This launcher bundles 13 Google Material Icons Round vectors distributed with
+Android SDK's icons/material/materialiconsround collection.
+
+Source project: https://github.com/google/material-design-icons
+License: Apache License 2.0; see MATERIAL-ICONS-LICENSE.txt.
+Google LLC and Material Design contributors.
+
+Icons: wifi, settings, settings_input_hdmi, tv, volume_up, schedule, bedtime,
+close, apps, palette, brightness_6, settings_input_component, wallpaper.
+
+Local changes: intrinsic display dimensions changed from 24dp to 22dp;
+theme tint changed to white for use over glass. Original vector paths retained.

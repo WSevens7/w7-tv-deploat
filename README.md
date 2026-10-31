@@ -14,6 +14,35 @@ Source dan Gradle wrapper ada di [`idlix-tv/`](idlix-tv/), APK ada di [`releases
 
 Versi 1.6.2 lolos build/lint dan 9 pemeriksaan fixture Android dengan jam nyata/input remote untuk timer episode, pembatalan timer, pembukaan ulang dan preferensi. Fixture tidak menggunakan stream sungguhan. Pemeriksaan kualitas/subtitle pada versi 1.6 mencakup 37 tes adapter dan 24 tes DOM browser; pemeriksaan tiga durasi pada 1.6.1 mencakup 15 tes Android. APK release 1.6.2 sudah dipasang pada TV dan tidak menyertakan instrumentation atau debugging WebView. Perubahan besar struktur situs dapat memerlukan pembaruan adapter.
 
+## Kredit, sumber aplikasi, dan asal proyek
+
+### BitTV yang dipasang pada TV
+
+BitTV adalah aplikasi pihak ketiga. Versi yang dipakai pada setup ini adalah **2.1.7 New Obsidian, varian mod NoAds**, package `com.live_streaming_tv.online_tv` (versionCode 60). Repo ini mencatat pemasangannya; source dan APK BitTV tidak disertakan di repo ini.
+
+| Bagian | Kredit dan sumber |
+| --- | --- |
+| Aplikasi asli | **DuktekTV / tim BitTV**. Identitas DuktekTV terdapat pada resource APK dan tautan dukungan bawaannya: [Saweria DuktekTV](https://saweria.co/duktektv) dan [Buy Me a Coffee DuktekTV](https://buymeacoffee.com/duktektv). Nama pengembang juga ditulis sebagai Duktek Digital TV oleh [halaman distributor](https://bittvapk.app/home/). |
+| Varian NoAds / modder | **Belum terkonfirmasi**. APK yang dipasang mengandung komponen bernama `com.gabutxmod.app.WelcomeDialog` dan `UpdateDialog`, sehingga ada indikasi keterkaitan dengan **GabutXMod**. Nama namespace tersebut belum membuktikan siapa pembuat seluruh mod atau pengunggah aslinya. |
+| Sumber file yang dipasang | [APK NoAds dari bittvapk.app](https://bittvapk.app/app/BitTV%20v2.1.7-new-obsidian%20%5BNoAds%5D.apk). Ini catatan asal unduhan, bukan konfirmasi bahwa distributor adalah pembuat atau modder. |
+| GitHub pembuat/modder | Belum ditemukan repo GitHub resmi yang dapat diverifikasi per 31 Oktober 2026; tidak mencantumkan akun yang hanya memiliki nama serupa. |
+
+Kredit aplikasi asli tetap milik pembuat BitTV; mod NoAds merupakan varian terpisah dari rilis asli. Pemeriksaan atribusi memakai APK yang benar-benar dipasang, bukan nama modder dari APK BitTV versi lain.
+
+### IDLIX Web TV dalam repo ini
+
+**IDLIX Web TV** adalah aplikasi Android TV custom yang dikembangkan untuk setup **WSevens7** di repo ini. Aplikasi membuka [situs IDLIX yang digunakan](https://z2.idlixku.com/) melalui Android WebView dan menambahkan navigasi remote serta antarmuka pemutar Liquid Glass. Source aplikasinya ada di [`idlix-tv/`](idlix-tv/).
+
+Kode wrapper, kontrol native TV, menu pilihan, daftar episode/rekomendasi, timer auto-hide dan sinkronisasi opasitas dikembangkan dalam proyek ini. Situs, katalog, stream, metadata, subtitle dan pilihan kualitas berasal dari IDLIX atau penyedia pemutar web yang dimuatnya. Ketersediaan pilihan mengikuti sumber web; repo ini tidak menyediakan server film atau salinan katalog/video.
+
+Aplikasi custom ini tidak berafiliasi dengan pengelola IDLIX. Nama dan aset layanan tetap milik pemiliknya masing-masing. Repo GitHub resmi pengelola situs IDLIX belum dapat diverifikasi; repo ekstensi, downloader atau integrasi pihak lain tidak dicantumkan sebagai repo pembuat situs.
+
+### Referensi launcher dan desain
+
+- Launcher berawal dari **Gathin23 — [CleanYourTV](https://github.com/Gathin23/cleanyourtv)**, dengan modifikasi Liquid Glass dan integrasi pemutar pada repo ini.
+- Referensi material Liquid Glass: **iyinchao — [liquid-glass-studio](https://github.com/iyinchao/liquid-glass-studio)**. Implementasi TV disesuaikan untuk perangkat Android TV.
+- Ikon memakai Google Material Icons Round; lisensi Apache 2.0 dan atribusi tersedia di folder source masing-masing aplikasi. Font Outfit beserta lisensi OFL disertakan di source launcher.
+
 ## Perubahan
 
 - Input TV, Wi-Fi, dan Settings dalam satu kapsul Liquid Glass.

@@ -1,0 +1,13 @@
+Android real-clock fixture: PASS (9 checks), episodesOnly=true.
+- Controller honors persisted timeout.
+- 5 seconds selected through remote and persisted.
+- Second Down opens episode rail using shared timeout.
+- Moving between episodes restarts deadline.
+- Idle rail disappears and restores watching controls.
+- Episode rail can reopen after expiry.
+- Selecting current episode cancels pending rail timer.
+- Original 10 seconds selected through remote and persisted.
+- Original preference restored.
+No live stream was used in this fixture.
+Gradle assembleDebug, assembleRelease, lintRelease: SUCCESS.
+Release 1.6.2/code 10 installed successfully; no DEBUGGABLE flag or instrumentation.

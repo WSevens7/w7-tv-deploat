@@ -1,0 +1,4 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <instrumentation android:name=".AppearanceProbe" android:targetPackage="com.w7.idlixwebtv" android:label="Appearance contract check" />
+    <instrumentation android:name=".SelectionTimeoutProbe" android:targetPackage="com.w7.idlixwebtv" android:label="Selection idle timeout check" />
+</manifest>

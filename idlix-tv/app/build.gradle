@@ -1,0 +1,14 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.w7.idlixwebtv'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'com.w7.idlixwebtv'
+        minSdk 26
+        targetSdk 34
+        versionCode 10
+        versionName '1.6.2'
+    }
+    buildTypes { release { minifyEnabled false; signingConfig signingConfigs.debug } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}

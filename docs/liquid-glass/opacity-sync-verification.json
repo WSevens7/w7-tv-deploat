@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-31",
+  "idlix": {
+    "version": "1.4",
+    "versionCode": 5,
+    "sha256": "12D29F1271E2BB644C86E5A902580DD0B41FBDACE03404A789906114BADCA865",
+    "releaseInstalled": true,
+    "debuggable": false,
+    "lintErrors": 0,
+    "lintWarnings": 13,
+    "adapterChecks": 33
+  },
+  "launcher": {
+    "version": "3.4.2-liquid-glass",
+    "versionCode": 17,
+    "sha256": "42C56C9A86E0C265438ED88199CD3D6B1ABC756BA7A55FE3F513FCB3099A1A81",
+    "releaseInstalled": true,
+    "debuggable": false,
+    "lintErrors": 0,
+    "lintWarnings": 135,
+    "homeRetained": "com.gathin.tvhome/.MainActivity"
+  },
+  "opacity": {
+    "initial": 60,
+    "tested": [
+      0,
+      100,
+      60
+    ],
+    "restored": 60,
+    "readOnResume": true,
+    "observerWhileActive": true,
+    "extraPolling": false,
+    "fallback": "Last successfully read value; 100% on fresh install",
+    "zeroAppearance": "Material hidden, text/icons/images and remote focus remain visible"
+  },
+  "integration": "Signed IDLIX read succeeds; unknown path and all writes rejected; unsigned shell denied",
+  "releaseInstrumentation": "Absent",
+  "debugForwardRemoved": true,
+  "performance": "Process PSS snapshot 106781 KB / RSS 179324 KB during live playback; frame dump included, no isolated FPS benchmark",
+  "priorSource": [
+    "C:\\Script Buatan GPT\\2026-10-30_Liquid-Glass-TV\\launcher",
+    "C:\\Script Buatan GPT\\2026-10-31_IDLIX-Web-TV-Liquid-Glass\\source"
+  ],
+  "sourceOperation": "Copied, not moved; previous output variants and TV app data preserved"
+}

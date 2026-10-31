@@ -1,6 +1,18 @@
-# W7 TV — Liquid Glass launcher
+# W7 TV — Liquid Glass launcher & IDLIX Web TV
 
-Custom launcher untuk TCL Android TV 11, dikembangkan dari [CleanYourTV](https://github.com/Gathin23/cleanyourtv). Pembaruan terakhir: 30 Oktober 2026, versi **3.4.1-liquid-glass** (versionCode 16), package `com.gathin.tvhome`.
+Custom launcher untuk TCL Android TV 11, dikembangkan dari [CleanYourTV](https://github.com/Gathin23/cleanyourtv). Pembaruan terakhir: 31 Oktober 2026, launcher **3.4.2-liquid-glass** (versionCode 17), package `com.gathin.tvhome`, dan pemutar **IDLIX Web TV 1.6.2** (versionCode 10), package `com.w7.idlixwebtv`.
+
+## Update pemutar TV
+
+- Kontrol remote dengan kapsul Liquid Glass **Kualitas / Subtitle / Lainnya**, timeline tanpa panel kaca besar.
+- Kualitas dan opsi subtitle mengikuti pilihan yang tersedia pada pemutar web; unggah subtitle tidak disertakan.
+- Bawah membuka pilihan; Bawah lagi membuka episode season aktif dengan fokus di episode yang diputar, atau maksimal 8 rekomendasi film dari genre yang sama.
+- **Lainnya → Auto-hide pilihan → 5 / 10 / 15 detik** mengatur pilihan, daftar episode, dan rekomendasi. Default 10 detik; setiap interaksi mengulang timer. Submenu pengaturan tidak ditutup saat diedit.
+- Opasitas pemutar mengikuti slider launcher melalui provider read-only dengan izin signature. Kedua APK harus memakai signature yang sama.
+
+Source dan Gradle wrapper ada di [`idlix-tv/`](idlix-tv/), APK ada di [`releases/idlix-web-tv-1.6.2/`](releases/idlix-web-tv-1.6.2/), panduan serta hasil pemeriksaan ada di [`docs/idlix-web-tv/`](docs/idlix-web-tv/). Build dari folder `idlix-tv` dengan `./gradlew --no-daemon lintRelease assembleRelease`; gunakan JDK 17+ dan SDK 34. Instal APK memakai `adb install -r` agar data tetap tersimpan. Launcher pendamping tersedia di [`releases/3.4.2-liquid-glass/`](releases/3.4.2-liquid-glass/); rincian sinkronisasi ada di [panduan opasitas](docs/liquid-glass/OPACITY-SYNC.md).
+
+Versi 1.6.2 lolos build/lint dan 9 pemeriksaan fixture Android dengan jam nyata/input remote untuk timer episode, pembatalan timer, pembukaan ulang dan preferensi. Fixture tidak menggunakan stream sungguhan. Pemeriksaan kualitas/subtitle pada versi 1.6 mencakup 37 tes adapter dan 24 tes DOM browser; pemeriksaan tiga durasi pada 1.6.1 mencakup 15 tes Android. APK release 1.6.2 sudah dipasang pada TV dan tidak menyertakan instrumentation atau debugging WebView. Perubahan besar struktur situs dapat memerlukan pembaruan adapter.
 
 ## Perubahan
 
@@ -19,7 +31,7 @@ Custom launcher untuk TCL Android TV 11, dikembangkan dari [CleanYourTV](https:/
 ## File yang disimpan
 
 - [`launcher/`](launcher/): source launcher lengkap dan Gradle wrapper.
-- [`releases/3.4.1-liquid-glass/`](releases/3.4.1-liquid-glass/): APK terbaru dan APK pemulihan tampilan lama.
+- [`releases/3.4.2-liquid-glass/`](releases/3.4.2-liquid-glass/): APK launcher terbaru. Versi 3.4.1 dan APK pemulihan tampilan lama tetap disimpan.
 - [`docs/liquid-glass/PANDUAN.md`](docs/liquid-glass/PANDUAN.md): cara pakai, build, dan pemulihan.
 - [`docs/liquid-glass/verification.json`](docs/liquid-glass/verification.json): versi, checksum APK, hasil pemeriksaan, dan batas pengujian.
 - [`shots/liquid-glass/`](shots/liquid-glass/): screenshot dari TV; beberapa screenshot merekam tahap verifikasi sebelumnya.
@@ -44,7 +56,7 @@ Gunakan alamat ADB TV yang sedang berlaku. Contoh PowerShell setelah `adb` terse
 
 ```powershell
 adb connect <IP-TV>:5555
-adb -s <IP-TV>:5555 install -r releases/3.4.1-liquid-glass/Liquid-Glass-TV.apk
+adb -s <IP-TV>:5555 install -r releases/3.4.2-liquid-glass/Liquid-Glass-TV-3.4.2.apk
 adb -s <IP-TV>:5555 shell am start -n com.gathin.tvhome/.MainActivity
 ```
 

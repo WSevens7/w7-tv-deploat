@@ -1,0 +1,17 @@
+{
+  "releaseInstalled": true,
+  "preferenceRestored": 10,
+  "versionCode": 10,
+  "version": "1.6.2",
+  "testedRailTimeoutSeconds": 5,
+  "androidFixtureChecks": 9,
+  "liveStreamTest": false,
+  "fixtureResult": "PASS",
+  "sharedTimeoutsSeconds": [
+    5,
+    10,
+    15
+  ],
+  "releaseDebuggable": false,
+  "releaseInstrumentation": []
+}

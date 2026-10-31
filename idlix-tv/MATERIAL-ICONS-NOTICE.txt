@@ -1,0 +1,6 @@
+Google Material Icons Round from the Android SDK materialiconsround collection.
+Icons: play_arrow, pause, replay_10, forward_10, closed_caption, settings, close, arrow_back.
+Source: https://github.com/google/material-design-icons
+Copyright Google LLC and Material Design contributors. Apache License 2.0;
+see MATERIAL-ICONS-LICENSE.txt.
+Local change: colorControlNormal theme tint replaced with white. Vector paths unchanged.

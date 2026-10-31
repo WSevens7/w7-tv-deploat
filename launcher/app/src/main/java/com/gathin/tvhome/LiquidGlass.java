@@ -48,6 +48,7 @@ final class LiquidGlass extends Drawable {
         opacityPercent = Math.max(0, Math.min(100, value));
         context.getSharedPreferences(Config.LIQUID_PREFS, 0).edit().putInt(OPACITY_KEY, opacityPercent).remove(HERO_OPACITY_KEY).apply();
         invalidateOwners();
+        context.getContentResolver().notifyChange(AppearanceProvider.opacityUri(context),null);
     }
 
     static void resetOpacity(android.content.Context context){
